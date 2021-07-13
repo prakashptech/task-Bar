@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        body {
+            background-color: #cfd3d8de;
+        }
+
+        .wrapper {
+            display: flex;
+            position: relative;
+        }
+
+        .wrapper .sidebar {
+            box-shadow: 5px 0 5px -2px #888;
+            width: 100px;
+            height: 100%;
+            background: #ffffff;
+            position: fixed;
+        }
+
+
+        .wrapper .sidebar ul li {
+            border: 2px solid;
+            border-color: rgb(255, 255, 255);
+            padding: 15px;
+
+        }
+
+        .wrapper .sidebar ul li a {
+            color: #070606;
+            display: block;
+            text-align: center;
+            width: 50px;
+
+        }
+
+        a .icon {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        a .caption {
+            display: block;
+        }
+
+        .wrapper .sidebar ul li:hover {
+            background-color: #bcddec;
+
+            border-left-color: rgb(4, 102, 182);
+        }
+
+        .wrapper .sidebar ul li:hover a {
+            color: #fff;
+        }
+
+
+
+        .wrapper .main_content {
+            width: 100%;
+            margin-left: 100px;
+
+        }
+
+        .wrapper .main_content .header {
+            padding: 30px;
+            background: #fff;
+        }
+
+        .wrapper .main_content .nav_back {
+            padding: 10px;
+
+            color: #86b4f8;
+
+        }
+
+        .wrapper .main_content .info {
+
+            padding: 15px;
+            background-color: #fff;
+            margin-left: 100px;
+            margin-top: 5%;
+            margin-right: 20%;
+        }
+
+        .wrapper .main_content .upload {
+
+
+            width: 100px;
+            height: 100px;
+            margin-left: 100px;
+            margin-top: 3%;
+            background-color: #fff;
+
+        }
+
+        .wrapper .main_content .upload p {
+
+            text-align: center;
+            vertical-align: middle;
+            line-height: 90px;
+
+        }
+		.or{   text-align: center;
+
+		}
+    </style>
+
+    <title>UI Task</title>
+</head>
+
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a><i class="fa fa-cloud"></i> </a></li>
+                <li><a> <i class="fa fa-user"></i>
+                        <span class="caption">User</span></a></li>
+
+                <li><a> <i class="fa fa-book"></i>
+                        <span class="caption">Lesson</span></a></li>
+                <li><a> <i class="fa fa-cog"></i>
+                        <span class="caption">Setting</span></a></li>
+            </ul>
+
+        </div>
+        <div class="main_content">
+            <header class="header"></header>
+            <div class="nav_back">
+                <p><i class="fa fa-caret-left"></i> Videos</p>
+            </div>
+            <div class="info">
+                <input type="text" id="myInput" placeholder="Insert URL here" 
+                    style="width: 50%;">
+
+            </div>
+			</br>
+			<p class="or"> or </p>
+            <div class="upload">
+                <p>Upload</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
